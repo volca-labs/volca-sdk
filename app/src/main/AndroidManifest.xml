@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.volca.volcasdk">
+    package="com.volca.app">
 
     <application
         android:allowBackup="true"
@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Volca">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
+            android:name="com.volca.app.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Volca.NoActionBar">
             <intent-filter>
