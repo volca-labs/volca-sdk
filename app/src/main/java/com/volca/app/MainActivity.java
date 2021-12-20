@@ -15,6 +15,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.volca.app.R;
 import com.volca.app.databinding.ActivityMainBinding;
+import com.volca.volcasdk.VolcaSDK;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        VolcaSDK.init(this);
+        VolcaSDK.hookAll();
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

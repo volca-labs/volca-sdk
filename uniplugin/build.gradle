@@ -32,6 +32,7 @@ dependencies {
     compileOnly fileTree(include: ['uniapp-v8-release.aar'], dir: 'libs')
 
     implementation project(path: ':volcasdk')
+//    implementation 'com.github.volca-labs.volca-sdk:volca:v1.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
